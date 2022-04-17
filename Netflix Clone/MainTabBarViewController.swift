@@ -20,9 +20,27 @@ class MainTabBarViewController: UITabBarController {
         let vc3 = UINavigationController(rootViewController: SearchViewController())
         let vc4 = UINavigationController(rootViewController: DownloadViewController())
         
+        
+        // fs samble
+        vc1.tabBarItem.image = UIImage(systemName: "house")
+        vc2.tabBarItem.image = UIImage(systemName: "play.circle")
+        vc3.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+        vc4.tabBarItem.image = UIImage(systemName: "arrow.down.to.line")
+        
+        vc1.title = "Home"
+        vc2.title = "Comming Soon"
+        vc3.title = "Top Search"
+        vc4.title = "Dowlaods"
+        
+        // enable dark mode : short cut: shift + command + a
+        tabBar.tintColor = .label
+        
+        
         // add for view as four button at main view
         setViewControllers([vc1,vc2,vc3,vc4], animated: true)
         // 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
+        
+       
     }
 
 
